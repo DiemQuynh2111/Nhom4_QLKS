@@ -14,7 +14,7 @@ from html import escape
 
 SERVER = r"LAPTOP-J63HK640"
 DATABASE = "QLKS"
-DRIVER = "ODBC Driver 18 for SQL Server"
+DRIVER = "ODBC Driver 17 for SQL Server"
 
 # File nhỏ để chuyển thông tin đặt phòng vừa tạo từ tài khoản Lễ tân sang Thu ngân
 # mà không cần cấp thêm quyền SELECT trực tiếp bảng gốc.
