@@ -617,8 +617,9 @@ def get_connection(username: str, password: str):
         f"UID={username};"
         f"PWD={password};"
         "TrustServerCertificate=yes;"
+        "Connection Timeout=60;"  # Tăng thời gian timeout lên 60 giây
     )
-    return pyodbc.connect(conn_str, timeout=8)
+    return pyodbc.connect(conn_str)
 
 
 def query_df(username: str, password: str, sql: str, params=None) -> pd.DataFrame:
