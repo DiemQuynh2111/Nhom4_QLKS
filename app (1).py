@@ -12,7 +12,7 @@ from html import escape
 # 1. CẤU HÌNH KẾT NỐI SQL SERVER
 # =========================================================
 
-SERVER = r"LAPTOP-J63HK640"
+SERVER ="172.26.246.24"
 DATABASE = "QLKS"
 DRIVER = "ODBC Driver 17 for SQL Server"
 
