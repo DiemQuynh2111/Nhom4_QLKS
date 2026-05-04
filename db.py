@@ -8,7 +8,7 @@ import pandas as pd
 
 SERVER = r"LAPTOP-J63HK640"
 DATABASE = "QLKS"
-DRIVER = "ODBC Driver 18 for SQL Server"
+DRIVER = "ODBC Driver 17 for SQL Server"
 
 
 # =========================================================
