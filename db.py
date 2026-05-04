@@ -15,16 +15,14 @@ DRIVER = "ODBC Driver 17 for SQL Server"
 # =========================================================
 
 def get_connection(username: str, password: str):
-    """
-    Tạo kết nối SQL Server bằng tài khoản người dùng nhập ở màn hình đăng nhập.
-    """
     conn_str = (
         f"DRIVER={{{DRIVER}}};"
         f"SERVER={SERVER};"
         f"DATABASE={DATABASE};"
         f"UID={username};"
         f"PWD={password};"
-        f"TrustServerCertificate=yes;"
+        "TrustServerCertificate=yes;"
+        "Connection Timeout=60;"  # Tăng thời gian timeout lên 60 giây
     )
     return pyodbc.connect(conn_str)
 
