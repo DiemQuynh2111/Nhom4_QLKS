@@ -1,4 +1,4 @@
 pyodbc
+sqlalchemy
 streamlit
 pandas
-pyodbc
